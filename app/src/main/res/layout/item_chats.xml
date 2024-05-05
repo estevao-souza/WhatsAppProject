@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clChatItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageRecipientPhoto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:shapeAppearanceOverlay="@style/ToRound"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/textRecipientName"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="Username"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageUnreadMessages"
+        app:layout_constraintStart_toEndOf="@+id/imageRecipientPhoto"
+        app:layout_constraintTop_toTopOf="@+id/imageRecipientPhoto" />
+
+    <TextView
+        android:id="@+id/textRecipientLastMessage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp"
+        android:text="Last message"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageRecipientPhoto"
+        app:layout_constraintEnd_toStartOf="@+id/imageUnreadMessages"
+        app:layout_constraintStart_toEndOf="@+id/imageRecipientPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/textRecipientName" />
+
+    <ImageView
+        android:id="@+id/imageUnreadMessages"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="Unread Messages Sign"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageRecipientPhoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageRecipientPhoto"
+        app:srcCompat="@drawable/ic_circle_24"
+        app:tint="@color/primary" />
+</androidx.constraintlayout.widget.ConstraintLayout>
