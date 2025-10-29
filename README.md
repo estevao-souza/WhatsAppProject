@@ -1,4 +1,4 @@
-### WhatsApp
+### WhatsApp Clone
 ![Final](https://github.com/estevao-souza/WhatsAppProject/assets/62207482/6d9f280a-0403-44ea-a9d3-986a39afc29c)
 
 ### About this project
@@ -17,3 +17,4 @@ This application is for study purposes only. I tried to apply the core of a mess
 
 ### Getting Started
 To run this application in development mode, you'll need to create an account on Firebase and do all of its configuration steps, as well as Firebase Authentication, Firestore and Storage. After all of these are done, you simply need to paste the "google-services.json" file into the app folder.
+
